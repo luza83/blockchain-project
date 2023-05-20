@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Retrieve data</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="showTx.js" type='text/javascript' ></script>
+    <link rel=" stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <ul>
+                <li> <a href="home.html">Home</a></li>
+                <li><a href="./upload.html">Register a transacion</a></li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class = "tittle-getdata">
+            <h1>One-step-back and One-step-forward</h1>
+            <p>Track the movements of each player in the supply chain</p>
+        </div>
+        <div class="text-container">
+            <label for="Address number"><strong></strong></label>
+            <input type="text" placeholder="Product id" name="Address number" required id="t_num" >
+            <button onclick = "show_data()">See history</button>
+          
+        </div>
+        <div class = "list">
+            <h3 id = "output"></h3>
+            <p id = "lst"></p>
+        </div>
+
+    <script>
+    // retrieve all the transactions contained in one address
+    function show_data(){
+        const address = document.getElementById('t_num').value;
+        get_ups(address);
+        /*$.getJSON(`https://api.whatsonchain.com/v1/bsv/test/address/${address}/history`, function(data) {
+            let arr = [], len = data.length;
+            $.each( data, function( i, item ){
+                arr.push(item.tx_hash);
+                })    
+            document.getElementById("output").innerHTML = "This product has gone through the following processes <br><br>"
+            for(let i = 0; i < arr.length; i++) {   
+                get_ops(arr[i]); //transform to text
+                }
+            }
+            );*/
+        }
+    </script>
+    
+</div>
+</body>
+</html>
+

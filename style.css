@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+.hero{
+position: relative;
+height: 100%;
+    
+
+}
+.hero-about{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #157daa;
+    color: #fff;
+    background-size: cover;
+        
+    
+    }
+.hero:before{
+    background-image: url("images/fishin.jpg" );
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    background-attachment: ;
+    z-index: -1;
+    opacity: 0.2;
+    content: ' ';
+    
+
+}
+nav{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background: #3c3f6a;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+  }
+  nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  nav ul li{
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: #f2f2f2;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    color: rgb(17, 17, 17);
+    background: rgb(255, 255, 255);
+  }
+
+.text-container{
+    max-width: 600px;
+    margin-top: 5%;
+    margin-left: 30%;
+}
+.text-container h1{
+    font-size: 60px;
+    font-weight: 400;
+    
+}
+.text-container ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+
+}
+.text-container a{
+    
+    text-decoration: none;
+    background: #546c9a;
+    padding: 14px 40px;
+    display: inline-block;
+    color:#fff;
+    font-size: 18px;
+    margin-top: 30px;
+    border-radius: 30px;
+    
+}
+
+.form{
+    background: url('bg.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.text-container button{
+    
+    text-decoration: none;
+    background: #546c9a;
+    padding: 6px 30px;
+    display: inline-block;
+    color:#fff;
+    font-size: 18px;
+    border-radius: 30px;
+    border-style: none;
+    margin-bottom: 0.8rem;
+    margin-top: 0.8rem;
+    
+}
+.form-container button{
+    
+    text-decoration: none;
+    background: #546c9a;
+    padding: 6px 30px;
+    display: inline-block;
+    color:#fff;
+    font-size: 18px;
+    border-radius: 30px;
+    border-style: none;
+    margin-bottom: 0.8rem;
+    margin-top: 0.8rem;
+    
+}
+
+
+.text-container input{
+    display: inline-block;
+    font: bold 1.0rem sans-serif;
+    margin-bottom: 0.8rem;
+    margin-top: 0.8rem;
+
+}
+.text-container label{
+    color:#fff;
+
+}
+.form-container label{
+    color:#fff;
+
+}
+
+.text-container button:hover {
+    background-color: hsl(213, 73%, 40%);
+  }
+.form-container button:hover {
+    background-color: hsl(213, 73%, 40%);
+  }
+
+.tittle {
+    max-width: 600px;
+    margin-top: 3%;
+    margin-left: 40%;
+
+}
+.tittle h1{
+    font-size: 60px;
+    font-weight: 400;
+    margin-left: -70%;
+    
+}
+
+.form-container{
+    float: right;
+    background: rgba(82, 144, 192, 0.9);
+    padding: 20px;
+    
+    margin: 40px auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+    margin-right: 200px; 
+    margin-top: -7%;
+}
+
+.form-container textarea{
+    font: 1.25rem / 1.5 sans-serif;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    
+}
+.form-container input {
+  display: inline-block;
+  font: bold 1rem sans-serif;
+  margin-bottom: 0.8rem;
+  margin-top: 0.8rem;
+
+}
+
+.tittle-getdata {
+    max-width: 600px;
+    margin-top: 5%;
+    margin-left: 30%; 
+}
+
+
+.tittle-getdata h1{
+    color:#3c3f6a;
+    font-size: 60px;
+    font-weight: 400;
+}
+.tittle-getdata p{
+    color:#3c3f6a;
+
+}
+.list {
+    color:#151519;
+    max-width: 600px;
+    margin-top: 5%;
+    margin-left: 30%; 
+    font-weight: bold;
+}
+
+/*style based on 
+https://www.youtube.com/watch?v=RlC1bawrcbk
+https://www.digitalocean.com/community/tutorials/how-to-style-common-form-elements-with-css
+https://www.foolishdeveloper.com/2021/06/navigation-menu-bar-design-html-css.html*/
+

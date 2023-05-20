@@ -1,0 +1,20 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "get-json": "^1.0.1",
+    "whatsonchain": "^0.2.0"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "whatsonchain": "^0.2.0"
+  }
+}
